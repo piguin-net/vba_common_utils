@@ -26,6 +26,7 @@ On Error GoTo FINALLY
         Call Kill(ExportDir & "\*")
         Call RmDir(ExportDir)
     End If
+    Call MkDir(ExportDir)
 
     ' VBProjectに存在するコンポーネントを一つずつ参照する。
     Dim lp As Long
